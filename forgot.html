@@ -7,14 +7,17 @@
     <!-- include javascript and css-->
 </head>
 <body>
-    <header>
-        <!--Metadata goes here-->
-    </header>
-    <nav></nav>
-    <main>
-
-    </main>
-    <footer></footer>
-    
+    <h1>Forgot Password</h1>
+    <form action="process-forgot-password.php" method="post">
+        <div>
+            <label for="usernameOrEmail">Username or Email:</label>
+        <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+        </div>
+        <div>
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>    
+        </div>
+        <input type="submit" value="Reset Password">
+    </form>
 </body>
 </html>

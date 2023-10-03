@@ -9,30 +9,29 @@
 <body>
     <h1>Edit Bucket List Items</h1>
     <form action="#" method="post" enctype="multipart/form-data">
-
         <div>
-            <label for="title">Title:</label><br>
-            <input type="text" id="title" name="title" value="Bucket List Item Title" disabled><br><br>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Bucket List Item Title">
         </div>
         <div>
-             <label for="description">Description:</label><br>
-             <textarea id="description" name="description" disabled>Bucket List Item Description</textarea><br><br>
+             <label for="description">Description:</label>
+             <textarea id="description" name="description">Bucket List Item Description</textarea>
          </div>
          <div>
-            <label for="rating">Rating:</label><br>
-            <input type="range" id="rating" name="rating" min="1" max="10"><br><br>
+            <label for="rating">Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="100">
          </div>
         <div>
-            <label for="completionDate">Completion Date:</label><br>
-            <input type="date" id="completionDate" name="completionDate"><br><br>
+            <label for="completionDate">Completion Date:</label>
+            <input type="date" id="completionDate" name="completionDate">
         </div>
         <div>
-            <label for="details">Details:</label><br>
-            <textarea id="details" name="details"></textarea><br><br>
+            <label for="details">Details:</label>
+            <textarea id="details" name="details"></textarea>
         </div>
         <div>
-            <label for="proof">Proof (Image upload):</label><br>
-            <input type="file" id="proof" name="proof"><br><br>
+            <label for="proof">Proof (Image upload):</label>
+            <input type="file" id="proof" name="proof">
         </div>
         <input type="submit" value="Submit">
     </form>
