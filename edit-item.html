@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <!-- include javascript and css-->
+</head>
+<body>
+    <h1>Edit Bucket List Items</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <div>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" value="Bucket List Item Title" disabled><br><br>
+        </div>
+        <div>
+             <label for="description">Description:</label><br>
+             <textarea id="description" name="description" disabled>Bucket List Item Description</textarea><br><br>
+         </div>
+         <div>
+            <label for="rating">Rating:</label><br>
+            <input type="range" id="rating" name="rating" min="1" max="10"><br><br>
+         </div>
+        <div>
+            <label for="completionDate">Completion Date:</label><br>
+            <input type="date" id="completionDate" name="completionDate"><br><br>
+        </div>
+        <div>
+            <label for="details">Details:</label><br>
+            <textarea id="details" name="details"></textarea><br><br>
+        </div>
+        <div>
+            <label for="proof">Proof (Image upload):</label><br>
+            <input type="file" id="proof" name="proof"><br><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
