@@ -11,7 +11,7 @@
   <form action="login.php" method="post">
     <div>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" maxlength="32" placeholder="ex. JohnDoe123" required>
     </div>
     <div>
         <label for="password">Password:</label>
@@ -27,6 +27,7 @@
     </div>
     <input type="submit" value="Login">
     </form>
+    No account? You can <a href="register.html">sign up now!</a>
     </main>
 </body>
 </html>
