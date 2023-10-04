@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
-    <main>
-        <h1>Login</h1>
-  <form action="login.php" method="post">
-    <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" maxlength="32" placeholder="ex. JohnDoe123" required>
-    </div>
-    <div>
-        <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    </div>
+    <!-- include javascript and css-->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer scr="js/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--This will be the main heading of the page so users know what page they're on-->
+      <h1>Login</h1>
 
-    <div>
-        <label for="remember_me">Remember me:</label>
-    <input type="checkbox" id="remember_me" name="remember_me">
-    </div>
-    <div>
-    <a href="forgot.html">Forgot Password?</a>
-    </div>
-    <input type="submit" value="Login">
-    </form>
-    No account? You can <a href="register.html">sign up now!</a>
+      <nav>
+        <!-- The following nav will be a bar at the top of the webpage so users can visit the desired page-->
+        <a href="index.html">Home</a> | <a href="list.html">Preview</a> |
+        <a href="login.html">Login</a> | <a href="search.html">Search</a> |
+      </nav>
+    </header>
+    <main>
+      No account? You can <a href="register.html">sign up now!</a>
+      <form action="login.php" method="post">
+        <div>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            maxlength="32"
+            placeholder="ex. JohnDoe123"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div>
+          <label for="remember_me">Remember me:</label>
+          <input type="checkbox" id="remember_me" name="remember_me" />
+        </div>
+        <div>
+          <a href="forgot.html">Forgot Password?</a>
+        </div>
+        <input type="submit" value="Login" />
+      </form>
     </main>
-</body>
+  </body>
 </html>

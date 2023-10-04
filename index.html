@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <!-- include javascript and css-->
-    <link rel= "stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <script defer scr="js/scripts.js"></script>
-</head>
-<body>
-    <h1>Welcome to the Main Page</h1>
-    <h2>My Lists</h2>
-    <ul>
-        <li><a href="view-item.html">Places I want to go</a></li> - <a href="edit-item.html">Edit Entry</a>
-        <li>Things I want to eat</li> - <a href="edit-item.html">Edit Entry</a>
-    </ul>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <!--This will be the main heading of the page so users know what page they're on-->
+      <h1>Welcome to the Main Page</h1>
+
+      <nav>
+        <!-- The following nav will be a bar at the top of the webpage so users can visit the desired page-->
+        <a href="index.html">Home</a> | <a href="list.html">Preview</a> |
+        <a href="login.html">Login</a> | <a href="search.html">Search</a> |
+      </nav>
+    </header>
+
+    <main>
+      <h2>My Lists</h2>
+      <ul>
+        <li><a href="view-item.html">Places I want to go</a></li>
+        -
+        <a href="edit-item.html">Edit Entry</a>
+        <button class="btn btn-delete">
+          <span class="mdi mdi-delete mdi-24px"></span>
+          <span class="mdi mdi-delete-empty mdi-24px"></span>
+          <span>Delete List</span>
+        </button>
+        <li>Things I want to eat</li>
+        -
+        <a href="edit-item.html">Edit Entry</a>
+        <button class="btn btn-delete">
+          <span class="mdi mdi-delete mdi-24px"></span>
+          <span class="mdi mdi-delete-empty mdi-24px"></span>
+          <span>Delete List</span>
+        </button>
+      </ul>
+      <h2>Add New Entry:</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="list_name">List Name:</label>
+          <input type="text" id="list_name" name="list_name" required />
+        </div>
+        <div>
+          <label for="list_description">List Description:</label>
+          <textarea
+            id="list_description"
+            name="list_description"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="public_view">Make List Public?:</label>
+          <input type="checkbox" id="public_view" name="public_view" />
+        </div>
+        <input type="submit" value="Make List" />
+      </form>
+    </main>
+  </body>
 </html>

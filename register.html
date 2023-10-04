@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
     <!-- include javascript and css-->
-</head>
-<body>
-    <h1>Create an Account</h1>
-        <form action="create-account.php" method="post">
-        <div class ="container">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>      
+    <link rel="stylesheet" href="styles.css" />
+    <script defer scr="js/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--This will be the main heading of the page so users know what page they're on-->
+      <h1>Create An Account</h1>
+
+      <nav>
+        <!-- The following nav will be a bar at the top of the webpage so users can visit the desired page-->
+        <a href="index.html">Home</a> | <a href="list.html">Preview</a> |
+        <a href="login.html">Login</a> | <a href="search.html">Search</a> |
+      </nav>
+    </header>
+    <main>
+      <form action="create-account.php" method="post">
+        <div class="container">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
         </div>
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <div>
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-    </div>
-    <div>
-        <label for="list_name">List Name:</label>
-        <input type="text" id="list_name" name="list_name" required>
-    </div>
-    <div>
-        <label for="list_description">List Description:</label>
-        <textarea id="list_description" name="list_description" required></textarea>
-    </div>
-    <div>
-        <label for="public_view">Public View:</label>
-        <input type="checkbox" id="public_view" name="public_view">  
-    </div>
-    <input type="submit" value="Create Account">
-  </form>
-</body>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="confirm_password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+          />
+        </div>
+        <div>
+          <label for="list_name">List Name:</label>
+          <input type="text" id="list_name" name="list_name" required />
+        </div>
+        <div>
+          <label for="list_description">List Description:</label>
+          <textarea
+            id="list_description"
+            name="list_description"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="public_view">Make List Public?:</label>
+          <input type="checkbox" id="public_view" name="public_view" />
+        </div>
+        <input type="submit" value="Create Account" />
+      </form>
+    </main>
+  </body>
 </html>
