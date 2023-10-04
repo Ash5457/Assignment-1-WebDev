@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script
       src="https://kit.fontawesome.com/05ad49203b.js"
       crossorigin="anonymous"
     ></script>
     <title>Edit Item</title>
     <!-- include javascript and css-->
-    <link rel="stylesheet" href="styles.css" />
-    <script defer scr="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="js/scripts.js"></script>
   </head>
   <body>
     <header>
@@ -35,7 +35,7 @@
             id="title"
             name="title"
             value="Bucket List Item Title"
-          />
+          >
         </div>
         <div>
           <label for="description">Description:</label>
@@ -47,15 +47,15 @@ Bucket List Item Description</textarea
       <fieldset>
         <legend>Status</legend>
         <div>
-          <input type="radio" name="Status" id="onhold" value="o" />
+          <input type="radio" name="Status" id="onhold" value="o">
           <label for="onhold">On Hold</label>
         </div>
         <div>
-          <input type="radio" name="Status" id="progressing" value="p" />
+          <input type="radio" name="Status" id="progressing" value="p">
           <label for="progressing">In Progress</label>
         </div>
         <div>
-          <input type="radio" name="Status" id="complete" value="c" />
+          <input type="radio" name="Status" id="complete" value="c">
           <label for="complete">Completed</label>
         </div>
       </fieldset>
@@ -67,28 +67,28 @@ Bucket List Item Description</textarea
         </div>
         <div>
           <label for="proof">Proof (Image upload):</label>
-          <input type="file" id="proof" name="proof" />
+          <input type="file" id="proof" name="proof">
         </div>
       </fieldset>
       <fieldset>
         <legend>Completed</legend>
         <div>
           <label for="rating">Score:</label>
-          <input type="range" id="rating" name="rating" min="1" max="100" />
+          <input type="range" id="rating" name="rating" min="1" max="100">
         </div>
         <div>
           <label for="completionDate">Completion Date:</label>
-          <input type="date" id="completionDate" name="completionDate" />
+          <input type="date" id="completionDate" name="completionDate">
         </div>
       </fieldset>
       <fieldset>
         <legend>Options</legend>
         <div>
           <label for="public_view">Make List Public?:</label>
-          <input type="checkbox" id="public_view" name="public_view" checked />
+          <input type="checkbox" id="public_view" name="public_view" checked>
         </div>
       </fieldset>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/05ad49203b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/05ad49203b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Search</title>
     <!-- include javascript and css-->
-    <link rel="stylesheet" href="styles.css" />
-    <script defer scr="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="js/scripts.js"></script>
   </head>
   <body>
     <header>
@@ -15,26 +18,30 @@
       <h1>Search</h1>
       <nav>
         <!-- The following nav will be a bar at the top of the webpage so users can visit the desired page-->
-        <a href="index.html"><i class="fa-solid fa-house"></i></a> | <a href="list.html"><i class="fa-solid fa-clipboard-list"></i></a> |
-        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a> 
+        <a href="index.html"><i class="fa-solid fa-house"></i></a> |
+        <a href="list.html"><i class="fa-solid fa-clipboard-list"></i></a> |
+        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
       </nav>
-      <div>
-        <form id="search-form">
-          <input
-            type="text"
-            class="search_input"
-            placeholder="Search for lists in the form"
-          />
-          <button type="text" class="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-      </div>
-        <h2>Search Results</h2>
-      <div>
-        <ul>
-          <li><a href="view-item.html">Places I want to go</a></li>
-          <li>Things I want to eat</li>
-        </ul> 
-      </div>
-      <button type="text" class="feelin_lucky">Feelin Lucky?</button>
+    </header>
+    <div>
+      <form id="search-form">
+        <input
+          type="text"
+          class="search_input"
+          placeholder="Search for lists in the form"
+        >
+        <button type="button" class="search_button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <button type="button" class="feelin_lucky">Feelin Lucky?</button>
+    </div>
+    <h2>Search Results</h2>
+    <div>
+      <ul>
+        <li><a href="view-item.html">Places I want to go</a></li>
+        <li>Things I want to eat</li>
+      </ul>
+    </div>
   </body>
 </html>
