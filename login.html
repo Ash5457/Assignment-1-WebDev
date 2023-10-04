@@ -22,26 +22,29 @@
     <main>
       No account? You can <a href="register.html">sign up now!</a>
       <form action="login.php" method="post">
-        <div>
-          <label for="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            maxlength="32"
-            placeholder="ex. JohnDoe123"
-            required
-          />
-        </div>
-        <div>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-        </div>
+        <fieldset>
+          <legend>Login Information</legend>
+          <div>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              maxlength="32"
+              placeholder="ex. JohnDoe123"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
 
-        <div>
-          <label for="remember_me">Remember me:</label>
-          <input type="checkbox" id="remember_me" name="remember_me" />
-        </div>
+          <div>
+            <label for="remember_me">Remember me:</label>
+            <input type="checkbox" id="remember_me" name="remember_me" />
+          </div>
+        </fieldset>
         <div>
           <a href="forgot.html">Forgot Password?</a>
         </div>
