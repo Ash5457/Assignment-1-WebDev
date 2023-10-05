@@ -4,7 +4,6 @@ Names: Farzad Imran (0729901) Akash Bahl (0740368)
 
 Live Loki link(s):
 <https://loki.trentu.ca/~demiimran/3420/assn/assn1/>
-<https://loki.trentu.ca/~akashbahl/3420/assn/assn1/>
 ## Rubric
 
 | Component                                           | Grade |
