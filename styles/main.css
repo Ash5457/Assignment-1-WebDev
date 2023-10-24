@@ -4,6 +4,7 @@
     /* Base font stack and font size */
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
+    font-weight: 400;
   
     /* Base colors*/
     background-color:#d0d1e9;
@@ -68,6 +69,6 @@ nav button {
 
 header h1{
     text-align: center;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2rem;
   }
