@@ -1,0 +1,73 @@
+@import 'reset.css';
+
+:root {
+    /* Base font stack and font size */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+  
+    /* Base colors*/
+    background-color:#d0d1e9;
+    color: black;
+  }
+
+  header {
+    background: white;
+    display: block;
+    padding: 0.5em 2.4em;
+    border-radius: 0.35em;
+    border: 0.15em solid #C0C0C0;
+    text-align: center;
+  }
+
+nav a,
+nav a:visited,
+nav button {
+  color: black;
+  text-decoration: none; /* remove default underline */
+  background-color: #B1CCB4;
+  cursor: pointer;
+}
+
+/* Hover state for buttons and nav links */
+nav a:hover,
+nav a:visited:hover,
+nav button:hover {
+  color: white;
+  background-color: #015918;
+}
+
+/* "Mid-click" state for buttons and nav links */
+nav a:active,
+nav a:visited:active,
+nav button:active {
+  color: black;
+  background-color: #B1CCB4; /* slightly darker white to indicate click */
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 30rem;
+    margin: 1em auto;
+  }
+
+nav a,
+nav button {
+  /* display: block ensures that our anchors fill their list items properly */
+  display: block;
+  /* padding, border, and border-radius give us the blocky look */
+  padding: 0.5em 2.4em;
+  border-radius: 0.35em;
+  border: 0.15em solid #B1CCB4;
+  text-align: center;
+  
+
+  box-shadow: 0.05em 0.15em 0.25em rgba(0, 0, 0, 25%);
+}
+
+header h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+  }
