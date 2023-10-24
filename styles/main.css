@@ -1,12 +1,10 @@
-@import 'reset.css';
+/* @import 'reset.css';
 
 :root {
-    /* Base font stack and font size */
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     font-weight: 400;
   
-    /* Base colors*/
     background-color:#d0d1e9;
     color: black;
   }
@@ -24,12 +22,12 @@ nav a,
 nav a:visited,
 nav button {
   color: black;
-  text-decoration: none; /* remove default underline */
+  text-decoration: none; 
   background-color: #B1CCB4;
   cursor: pointer;
 }
 
-/* Hover state for buttons and nav links */
+
 nav a:hover,
 nav a:visited:hover,
 nav button:hover {
@@ -37,12 +35,12 @@ nav button:hover {
   background-color: #015918;
 }
 
-/* "Mid-click" state for buttons and nav links */
+
 nav a:active,
 nav a:visited:active,
 nav button:active {
   color: black;
-  background-color: #B1CCB4; /* slightly darker white to indicate click */
+  background-color: #B1CCB4; 
 }
 
 nav ul{
@@ -55,9 +53,9 @@ nav ul{
 
 nav a,
 nav button {
-  /* display: block ensures that our anchors fill their list items properly */
+
   display: block;
-  /* padding, border, and border-radius give us the blocky look */
+
   padding: 0.5em 2.4em;
   border-radius: 0.35em;
   border: 0.15em solid #B1CCB4;
@@ -71,4 +69,139 @@ header h1{
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
-  }
+  } */
+
+  @import 'reset.css';
+
+header {
+  background-color: #0070c0;
+  color: white;
+  text-align: center;
+  padding: 1% 0;
+  display: block;
+  padding: 0.5em 2.4em;
+  border-radius: 0.35em;
+  border: 0.15em solid #C0C0C0;
+  margin: 1% 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-align: center;
+  margin-top: 1%;
+}
+
+nav a,
+nav a:visited,
+nav button{
+  text-decoration: none;
+  color: white;
+  margin: 0 1%;
+  display: inline-block;
+  padding: 0.3em 1.5em;
+  border-radius: 0.25em;
+  border: 0.1em solid #B1CCB4;
+  text-align: center;
+  box-shadow: 0.05em 0.1em 0.15em rgba(0, 0, 0, 25%);
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:visited:hover,
+nav button:hover {
+  color: white;
+  background-color: green;
+}
+
+nav a:active,
+nav a:visited:active,
+nav button:active {
+  color: black;
+  background-color: darkgreen; /* slightly darker green to indicate click */
+} 
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  max-width: 30rem;
+  margin: 1em auto;
+}
+nav a,
+nav button {
+
+}
+
+form {
+  margin: 1%;
+  padding: 0.5em;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1%;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+  margin-right: 0.5em;
+}
+
+input[type="file"] {
+  margin-bottom: 1%;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+input[type="submit"] {
+  background-color: #0070c0;
+  color: white;
+  padding: 0.5em 2.4em;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1%;
+}
+
+input[type="submit"]:hover {
+  background-color: #005090;
+}
+
+
+
+header h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1% 0;
+}
