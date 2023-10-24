@@ -80,10 +80,9 @@ header {
   padding: 1% 0;
   display: block;
   padding: 0.5em 2.4em;
-  border-radius: 0.35em;
-  border: 0.15em solid #C0C0C0;
-  margin: 1% 0;
+  border: 0.15em solid #4057a2;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: white;
@@ -103,7 +102,7 @@ nav button{
   color: white;
   margin: 0 1%;
   display: inline-block;
-  padding: 0.3em 1.5em;
+  padding: 0.5em 2.4em;
   border-radius: 0.25em;
   border: 0.1em solid #B1CCB4;
   text-align: center;
@@ -197,7 +196,10 @@ input[type="submit"]:hover {
   background-color: #005090;
 }
 
-
+main {
+  max-width: 60rem;
+  margin: 1em auto;
+}
 
 header h1 {
   text-align: center;
