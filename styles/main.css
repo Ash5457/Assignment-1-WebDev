@@ -149,7 +149,7 @@ main ul {
   font-family: 'Helvetica', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background-color: #d0d1e9;
+  background-color: white;
   color: black;
 }
 
@@ -168,10 +168,12 @@ header {
 
 /* Body Styles */
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
-  background-color: white;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 /* Navigation Styles */
@@ -358,20 +360,13 @@ input[type="submit"]:hover {
   background-color: #005080;
 }
 
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 /* Footer styles */
 footer {
   color: #777;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
   margin-top: auto;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 /* Responsive design (adjust for smaller screens) */
