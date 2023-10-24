@@ -175,11 +175,6 @@ body {
 }
 
 /* Navigation Styles */
-nav {
-  text-align: center;
-  margin-top: 1%;
-}
-
 nav a,
 nav a:visited,
 nav button {
@@ -193,6 +188,7 @@ nav button {
   text-align: center;
   box-shadow: 0.05em 0.1em 0.15em rgba(0, 0, 0, 25%);
   margin-top: 0.5em;
+  background-color: #005080;
   cursor: pointer;
 }
 
@@ -245,14 +241,14 @@ label {
 }
 
 input[type="text"],
-textarea {
-  width: 100%;
+textarea, input[type="password"] {
+  width: 85%;
   padding: 0.5em;
   margin-bottom: 1%;
   border: 1px solid #ccc;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
   margin-right: 0.5em;
 }
 
@@ -261,11 +257,7 @@ input[type="file"] {
 }
 
 input[type="range"] {
-  width: 100%;
-}
-
-input[type="checkbox"] {
-  margin-right: 0.5em;
+  width: 85%;
 }
 
 input[type="submit"] {
@@ -318,18 +310,6 @@ main ul {
   box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.25);
 }
 
-/* Navigation links */
-nav a {
-  font-weight: bold;
-  padding: 0.5em 2.4em;
-  margin: 0 1%;
-  border-radius: 5px;
-  background-color: #005080;
-}
-
-nav a:hover {
-  background-color: #0070c0;
-}
 
 /* Buttons */
 button.btn {
@@ -387,10 +367,11 @@ img {
 
 /* Footer styles */
 footer {
-  text-align: center;
-  margin: 20px 0;
   color: #777;
   font-size: 0.8em;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 0.2em;
 }
 
 /* Responsive design (adjust for smaller screens) */
