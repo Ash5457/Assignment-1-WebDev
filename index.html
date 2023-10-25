@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/05ad49203b.js"
       crossorigin="anonymous"
     ></script>
     <title>Index</title>
     <!-- include javascript and css-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="js/scripts.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header>
@@ -29,25 +30,31 @@
     <main>
       <h2>My Lists</h2>
       <ul>
-        <li><a href="view-item.html">Places I want to go</a> - <a href="edit-item.html"><i class="fa-solid fa-pen-to-square"></i></a>
+        <li>
+          <a href="view-item.html">Places I want to go</a> -
+          <a href="edit-item.html"><i class="fa-solid fa-pen-to-square"></i></a>
           <button class="btn btn-delete">
             <span class="mdi mdi-delete mdi-24px"></span>
             <span class="mdi mdi-delete-empty mdi-24px"></span>
             <span><i class="fa-solid fa-trash"></i></span>
-          </button></li>
-        
-        <li>Things I want to eat - <a href="edit-item.html"><i class="fa-solid fa-pen-to-square"></i></a>
+          </button>
+        </li>
+
+        <li>
+          Things I want to eat -
+          <a href="edit-item.html"><i class="fa-solid fa-pen-to-square"></i></a>
           <button class="btn btn-delete">
             <span class="mdi mdi-delete mdi-24px"></span>
             <span class="mdi mdi-delete-empty mdi-24px"></span>
             <span><i class="fa-solid fa-trash"></i></span>
-          </button></li>
+          </button>
+        </li>
       </ul>
       <h2>Add New Entry:</h2>
       <form action="#" method="post">
         <div>
           <label for="list_name">List Name:</label>
-          <input type="text" id="list_name" name="list_name" required>
+          <input type="text" id="list_name" name="list_name" required />
         </div>
         <div>
           <label for="list_description">List Description:</label>
@@ -59,9 +66,9 @@
         </div>
         <div>
           <label for="public_view">Make List Public?:</label>
-          <input type="checkbox" id="public_view" name="public_view">
+          <input type="checkbox" id="public_view" name="public_view" />
         </div>
-        <input type="submit" value="Make List">
+        <input type="submit" value="Make List" />
       </form>
     </main>
   </body>

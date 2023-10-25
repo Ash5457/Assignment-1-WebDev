@@ -1,0 +1,244 @@
+/* Import reset.css if needed */
+@import 'reset.css';
+
+/* Common styles */
+:root {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #d0d1e9;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    background-color: #0070c0;
+    color: white;
+    text-align: center;
+    padding: 1% 0;
+    display: block;
+    padding: 0.5em 2.4em;
+    border-radius: 0.35em;
+    border: 0.15em solid #C0C0C0;
+    margin: 1% 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 1%;
+}
+
+nav a,
+nav a:visited,
+nav button {
+    text-decoration: none;
+    color: white;
+    margin: 0 1%;
+    display: inline-block;
+    padding: 0.3em 1.5em;
+    border-radius: 0.25em;
+    border: 0.1em solid #B1CCB4;
+    text-align: center;
+    box-shadow: 0.05em 0.1em 0.15em rgba(0, 0, 0, 25%);
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+/* Hover state for buttons and nav links */
+nav a:hover,
+nav a:visited:hover,
+nav button:hover {
+    color: white;
+    background-color: green; /* Change the background color on hover */
+}
+
+/* "Mid-click" state for buttons and nav links */
+nav a:active,
+nav a:visited:active,
+nav button:active {
+    color: black;
+    background-color: darkgreen; /* Change the background color on click */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 30rem;
+    margin: 1em auto;
+}
+
+/* Additional Styles */
+form {
+    margin: 1%;
+    padding: 0.5em;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+input[type="file"] {
+    margin-bottom: 1%;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+input[type="submit"] {
+    background-color: #0070c0;
+    color: white;
+    padding: 0.5em 2.4em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 1%;
+}
+
+input[type="submit"]:hover {
+    background-color: #005090;
+}
+
+/* Header H1 Styles */
+header h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 1% 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+}
+
+
+
+/* Page container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0.35em;
+    box-shadow: 0.15em 0.15em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+/* Navigation links */
+nav a {
+  font-weight: bold;
+  padding: 0.4em 1em;
+  margin: 0 1%;
+  border-radius: 5px;
+  background-color: #005080;
+}
+
+nav a:hover {
+  background-color: #0070c0;
+}
+
+/* Buttons */
+button.btn {
+  background-color: #0070c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4em 1em;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #005080;
+}
+
+/* Form input fields */
+input[type="text"], input[type="password"], textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+/* Form input focus */
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  border-color: #0070c0;
+  box-shadow: 0 0 5px rgba(0, 112, 192, 0.5);
+}
+
+/* Form submit button */
+input[type="submit"] {
+  background-color: #0070c0;
+  color: white;
+  padding: 0.5em 2.4em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #005080;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin: 20px 0;
+  color: #777;
+  font-size: 0.8em;
+}
+/* Responsive design (adjust for smaller screens) */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+  nav a {
+      padding: 0.3em 0.8em;
+  }
+  button.btn {
+      padding: 0.3em 0.8em;
+  }
+}
